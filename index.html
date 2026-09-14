@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nova Luna Wellness · 30-day Meta dashboard</title>
+  <style>
+    :root {
+      --ink: #2c2420;
+      --muted: #6f635c;
+      --line: #e4d8cc;
+      --paper: #f7f1ea;
+      --card: #fffdf9;
+      --gold: #b0894d;
+      --good: #3d6b4f;
+      --warn: #9a6b2f;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.5 "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 40px 24px 80px; }
+    .eyebrow { letter-spacing: .16em; text-transform: uppercase; font-size: 11px; color: var(--gold); font-family: ui-sans-serif, system-ui, sans-serif; }
+    h1 { font-weight: 500; font-size: 36px; margin: 8px 0 12px; letter-spacing: -.02em; }
+    h2 { font-weight: 500; font-size: 22px; margin: 0 0 12px; }
+    h3 { font-weight: 500; font-size: 16px; margin: 0 0 10px; }
+    p { color: var(--ink); margin: 0 0 12px; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .hero { margin-bottom: 28px; }
+    .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 24px 0 32px; }
+    .kpi {
+      background: var(--card);
+      border: 1px solid var(--line);
+      padding: 16px 18px;
+    }
+    .kpi b { display: block; font-size: 28px; font-weight: 500; letter-spacing: -.03em; }
+    .kpi span { display: block; margin-top: 4px; font-size: 12px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; letter-spacing: .04em; text-transform: uppercase; }
+    .kpi.good b { color: var(--good); }
+    section { margin: 40px 0; }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); font-size: 14px; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tr.win td:first-child { box-shadow: inset 3px 0 0 var(--good); }
+    tr.soft td:first-child { box-shadow: inset 3px 0 0 var(--warn); }
+    .callout {
+      background: #f1efe6;
+      border-left: 3px solid var(--gold);
+      padding: 14px 16px;
+      margin: 16px 0 20px;
+    }
+    .bars { display: grid; gap: 10px; margin: 16px 0 8px; }
+    .bar-row { display: grid; grid-template-columns: 140px 1fr 72px; gap: 10px; align-items: center; font-size: 13px; }
+    .track { height: 10px; background: #ece3d8; }
+    .fill { height: 10px; background: var(--gold); }
+    .fill.alt { background: #6d7f6a; }
+    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .aware { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .aware div { background: var(--card); border: 1px solid var(--line); padding: 12px; }
+    .aware b { display: block; font-size: 20px; font-weight: 500; }
+    .aware span { font-size: 11px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; text-transform: uppercase; letter-spacing: .05em; }
+    @media (max-width: 800px) {
+      .kpis, .aware, .grid2 { grid-template-columns: 1fr 1fr; }
+      .bar-row { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 520px) {
+      .kpis, .aware { grid-template-columns: 1fr; }
+      h1 { font-size: 28px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="hero">
+      <div class="eyebrow">Nova Luna Wellness · Los Angeles</div>
+      <h1>30-day Meta dashboard</h1>
+      <p>In 30 days Nova Luna reached 72,145 people, generated 103 leads, pulled 1,327 Instagram profile visits, opened 16 new DMs, and turned those leads into booked consultations — on $5,968 in ad spend.</p>
+      <p class="muted">Aug 16 – Sep 14, 2026</p>
+    </header>
+
+    <div class="callout">
+      Microneedling Instagram Stories is the engine: 26 leads at $22 cost per lead, 303 profile visits, and a confirmed consult on Sep 18. Treatment Match added a Sculptra Zoom (Sep 4) and a microneedling appointment (Oct 2). The wedding quiz delivered 41 completions at $54 each. Instagram produced 69 of 103 leads.
+    </div>
+
+    <div class="kpis">
+      <div class="kpi"><b>$5,968</b><span>Ad spend</span></div>
+      <div class="kpi good"><b>103</b><span>Leads</span></div>
+      <div class="kpi good"><b>$58</b><span>Cost per lead</span></div>
+      <div class="kpi good"><b>3</b><span>Consults booked</span></div>
+      <div class="kpi"><b>1,327</b><span>Instagram profile visits</span></div>
+      <div class="kpi"><b>16</b><span>New DM conversations</span></div>
+    </div>
+
+    <hr />
+
+    <section>
+      <h2>Leads that became consults</h2>
+      <div class="kpis" style="grid-template-columns: repeat(3, 1fr)">
+        <div class="kpi good"><b>3</b><span>Booked consults</span></div>
+        <div class="kpi"><b>1</b><span>Booked, no-show</span></div>
+        <div class="kpi"><b>7</b><span>Still talking appointment</span></div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Lead</th><th>Source / procedure</th><th>Status</th><th>When</th></tr>
+        </thead>
+        <tbody>
+          <tr class="win"><td>Letisha Paez Holloway</td><td>Stories · Microneedling</td><td>Consultation booked</td><td>Sep 18, 4:30pm</td></tr>
+          <tr class="win"><td>lei sales</td><td>Treatment Match · Microneedling</td><td>Appointment booked</td><td>Oct 2, 1:00pm</td></tr>
+          <tr class="win"><td>Josefina Maranan</td><td>Treatment Match · Sculptra</td><td>Zoom consultation held</td><td>Sep 4, 1:00pm</td></tr>
+          <tr class="soft"><td>Sediqi</td><td>Wedding quiz</td><td>Booked, no-show</td><td>Aug 25, 11:00am</td></tr>
+        </tbody>
+      </table>
+      <p class="muted" style="margin-top:12px">Plus Kavin Thipthamai (Stories microneedling, submitted Aug 15, one day before this window) is also booked Sep 18 at 4:30pm — two microneedling consults on the same afternoon.</p>
+
+      <h3 style="margin-top:28px">Pipeline still in motion</h3>
+      <table>
+        <thead>
+          <tr><th>Lead</th><th>Lane</th><th>Note</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Amanda Correia</td><td>Stories · Microneedling</td><td>Asked about appointment time</td></tr>
+          <tr><td>Bellas Cortez</td><td>Stories · Microneedling</td><td>Wanted a time, then paused outreach</td></tr>
+          <tr><td>Xitlali Cabrera</td><td>Stories · Microneedling</td><td>Interested for November, lives a bit far</td></tr>
+          <tr><td>Jeannie MacKechnie</td><td>Treatment Match · PRX</td><td>Wanted an appointment; family emergency</td></tr>
+          <tr><td>Phoenix T</td><td>Stories · PRX</td><td>Called the clinic back Sep 3</td></tr>
+          <tr><td>Lucine Asatorian</td><td>Wedding quiz</td><td>Texted back: call after 5pm</td></tr>
+          <tr><td>Aliyah Barry</td><td>Wedding quiz</td><td>Asked about location</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h3>How each campaign showed up</h3>
+      <table>
+        <thead>
+          <tr><th>Lane</th><th class="num">Leads</th><th class="num">Booked</th><th>Quality read</th></tr>
+        </thead>
+        <tbody>
+          <tr class="win"><td>IG Stories Instant Forms</td><td class="num">47</td><td class="num">1</td><td>39 said LA works; cheapest leads; actual chair time</td></tr>
+          <tr class="soft"><td>Wedding Prep Quiz</td><td class="num">41</td><td class="num">1 no-show</td><td>Volume is real; ~11 of 41 noted as out of area</td></tr>
+          <tr class="win"><td>Treatment Match Offer</td><td class="num">9</td><td class="num">2</td><td>Sculptra Zoom + microneedling appt; also DMs</td></tr>
+          <tr class="soft"><td>Treatment Match Concern</td><td class="num">6</td><td class="num">—</td><td>Acne / event-timing Reels in the URLs</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Awareness</h2>
+      <div class="aware">
+        <div><b>72,145</b><span>People reached</span></div>
+        <div><b>175,125</b><span>Impressions</span></div>
+        <div><b>3.07%</b><span>CTR</span></div>
+        <div><b>$34.08</b><span>CPM</span></div>
+        <div><b>82,768</b><span>Video plays</span></div>
+        <div><b>33,009</b><span>3-second views</span></div>
+        <div><b>7,217</b><span>ThruPlays</span></div>
+        <div><b>3,419</b><span>Videos completed</span></div>
+        <div><b>36,404</b><span>Post engagements</span></div>
+        <div><b>311</b><span>Reactions</span></div>
+        <div><b>84</b><span>Saves</span></div>
+        <div><b>58</b><span>Shares</span></div>
+        <div><b>11</b><span>Comments</span></div>
+        <div><b>14</b><span>Facebook Page likes</span></div>
+        <div><b>2,931</b><span>Link clicks</span></div>
+        <div><b>2,325</b><span>Landing page views</span></div>
+      </div>
+      <h3 style="margin-top:28px">People reached by platform</h3>
+      <div class="bars">
+        <div class="bar-row"><span>Instagram</span><div class="track"><div class="fill" style="width:100%"></div></div><span>46,893</span></div>
+        <div class="bar-row"><span>Facebook</span><div class="track"><div class="fill" style="width:54%"></div></div><span>25,149</span></div>
+        <div class="bar-row"><span>Audience Network</span><div class="track"><div class="fill" style="width:6%"></div></div><span>2,894</span></div>
+        <div class="bar-row"><span>Threads</span><div class="track"><div class="fill" style="width:1%"></div></div><span>507</span></div>
+      </div>
+      <p class="muted">Platform reach is not unique across apps. Account unique reach is 72,145. Instagram spend $3,601 · Facebook $2,203.</p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Campaign scorecard</h2>
+      <p>Stories won efficiency and booked a consult. The quiz won volume. Treatment Match looks more expensive on CPL and still produced two of the three bookings plus most of the DMs.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Campaign</th>
+            <th class="num">Spend</th>
+            <th class="num">Leads</th>
+            <th class="num">CPL</th>
+            <th class="num">Consults</th>
+            <th class="num">IG visits</th>
+            <th class="num">New DMs</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="win"><td>IG Stories | Qualified Instant Leads</td><td class="num">$1,586</td><td class="num">47</td><td class="num">$34</td><td class="num">1 booked</td><td class="num">483</td><td class="num">1</td></tr>
+          <tr class="win"><td>Wedding Prep Quiz | Leads</td><td class="num">$2,208</td><td class="num">41</td><td class="num">$54</td><td class="num">1 no-show</td><td class="num">379</td><td class="num">4</td></tr>
+          <tr class="win"><td>Treatment Match | Offer Leads</td><td class="num">$1,257</td><td class="num">9</td><td class="num">$140</td><td class="num">2 booked</td><td class="num">318</td><td class="num">10</td></tr>
+          <tr class="soft"><td>Treatment Match | Concern Leads</td><td class="num">$918</td><td class="num">6</td><td class="num">$153</td><td class="num">—</td><td class="num">147</td><td class="num">1</td></tr>
+        </tbody>
+      </table>
+      <div class="grid2" style="margin-top:28px">
+        <div>
+          <h3>Spend by campaign</h3>
+          <div class="bars">
+            <div class="bar-row"><span>Wedding quiz</span><div class="track"><div class="fill" style="width:100%"></div></div><span>$2,208</span></div>
+            <div class="bar-row"><span>Stories</span><div class="track"><div class="fill" style="width:72%"></div></div><span>$1,586</span></div>
+            <div class="bar-row"><span>Offer</span><div class="track"><div class="fill" style="width:57%"></div></div><span>$1,257</span></div>
+            <div class="bar-row"><span>Concern</span><div class="track"><div class="fill" style="width:42%"></div></div><span>$918</span></div>
+          </div>
+        </div>
+        <div>
+          <h3>Leads by campaign</h3>
+          <div class="bars">
+            <div class="bar-row"><span>Stories</span><div class="track"><div class="fill alt" style="width:100%"></div></div><span>47</span></div>
+            <div class="bar-row"><span>Wedding quiz</span><div class="track"><div class="fill alt" style="width:87%"></div></div><span>41</span></div>
+            <div class="bar-row"><span>Offer</span><div class="track"><div class="fill alt" style="width:19%"></div></div><span>9</span></div>
+            <div class="bar-row"><span>Concern</span><div class="track"><div class="fill alt" style="width:13%"></div></div><span>6</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Direct messages</h2>
+      <p>Twenty people connected in Messenger or Instagram DM. Fifteen sent a first reply. Offer Treatment Match ads opened 10 of 16 new conversations — the same lane that booked Josefina’s Sculptra Zoom.</p>
+      <div class="kpis">
+        <div class="kpi"><b>20</b><span>Messaging connections</span></div>
+        <div class="kpi good"><b>16</b><span>New conversations</span></div>
+        <div class="kpi"><b>15</b><span>First DM replies</span></div>
+        <div class="kpi"><b>13</b><span>Replied within 7 days</span></div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Campaign</th><th class="num">New conversations</th><th class="num">First replies</th><th class="num">Total connections</th><th class="num">Replied in 7d</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Wedding Prep Quiz</td><td class="num">4</td><td class="num">4</td><td class="num">6</td><td class="num">4</td></tr>
+          <tr class="win"><td>Treatment Match | Offer</td><td class="num">10</td><td class="num">10</td><td class="num">10</td><td class="num">7</td></tr>
+          <tr><td>Treatment Match | Concern</td><td class="num">1</td><td class="num">—</td><td class="num">3</td><td class="num">1</td></tr>
+          <tr><td>IG Stories Instant Leads</td><td class="num">1</td><td class="num">1</td><td class="num">1</td><td class="num">1</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Which procedure is working</h2>
+      <p>Microneedling is the account: 29 leads at $27 CPL, 436 profile visits, and two of the three booked consults. PRX and Letybo Stories forms are the next specials. Sculptra barely spent and still produced the Zoom consult.</p>
+      <div class="bars" style="margin-bottom:20px">
+        <div class="bar-row"><span>Microneedling</span><div class="track"><div class="fill alt" style="width:100%"></div></div><span>29 leads</span></div>
+        <div class="bar-row"><span>PRX</span><div class="track"><div class="fill alt" style="width:38%"></div></div><span>11 leads</span></div>
+        <div class="bar-row"><span>Letybo</span><div class="track"><div class="fill alt" style="width:34%"></div></div><span>10 leads</span></div>
+        <div class="bar-row"><span>Event timing</span><div class="track"><div class="fill alt" style="width:10%"></div></div><span>3 leads</span></div>
+        <div class="bar-row"><span>HIFU Face + Neck</span><div class="track"><div class="fill alt" style="width:10%"></div></div><span>3 leads</span></div>
+        <div class="bar-row"><span>Acne / post-acne</span><div class="track"><div class="fill alt" style="width:7%"></div></div><span>2 leads</span></div>
+        <div class="bar-row"><span>Botox</span><div class="track"><div class="fill alt" style="width:7%"></div></div><span>2 leads</span></div>
+        <div class="bar-row"><span>HIFU Face</span><div class="track"><div class="fill alt" style="width:3%"></div></div><span>1 lead</span></div>
+      </div>
+      <table>
+        <thead>
+          <tr><th>Procedure</th><th class="num">Spend</th><th class="num">Leads</th><th class="num">CPL</th><th class="num">IG visits</th><th>Outcome</th></tr>
+        </thead>
+        <tbody>
+          <tr class="win"><td>Microneedling</td><td class="num">$795</td><td class="num">29</td><td class="num">$27</td><td class="num">436</td><td>2 booked consults</td></tr>
+          <tr class="win"><td>PRX / PRX Biostimulator</td><td class="num">$429</td><td class="num">11</td><td class="num">$39</td><td class="num">77</td><td>Callback + nurture</td></tr>
+          <tr class="win"><td>Letybo</td><td class="num">$434</td><td class="num">10</td><td class="num">$43</td><td class="num">82</td><td>Forms in; no consult yet</td></tr>
+          <tr class="win"><td>Event timing</td><td class="num">$162</td><td class="num">3</td><td class="num">$54</td><td class="num">29</td><td>Reel + image convert</td></tr>
+          <tr class="soft"><td>HIFU Face + Neck</td><td class="num">$430</td><td class="num">3</td><td class="num">$143</td><td class="num">67</td><td>Out of area + not interested</td></tr>
+          <tr class="soft"><td>Acne + post-acne</td><td class="num">$264</td><td class="num">2</td><td class="num">$132</td><td class="num">47</td><td>Reel converts</td></tr>
+          <tr><td>Botox</td><td class="num">$429</td><td class="num">2</td><td class="num">$215</td><td class="num">72</td><td>No Stories leads</td></tr>
+          <tr><td>HIFU Face</td><td class="num">$265</td><td class="num">1</td><td class="num">$265</td><td class="num">41</td><td>Pause</td></tr>
+          <tr class="win"><td>Sculptra</td><td class="num">$61</td><td class="num">0</td><td class="num">—</td><td class="num">26</td><td>Zoom consult 9/4</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Specials and creatives that are working</h2>
+      <div class="callout">
+        Hero: Microneedling Instagram Stories instant form — $562 spend · 26 leads · $22 CPL · 303 profile visits · Letisha booked Sep 18. The landing-page offer still books (lei sales, Oct 2) at $77 CPL — Stories is about 3.5× cheaper per lead.
+      </div>
+      <table>
+        <thead>
+          <tr><th>Creative / special</th><th>Format</th><th class="num">Spend</th><th class="num">Leads</th><th class="num">CPL</th><th class="num">IG visits</th></tr>
+        </thead>
+        <tbody>
+          <tr class="win"><td>IGS | Microneedling | Qualified Instant Lead</td><td>Stories form</td><td class="num">$562</td><td class="num">26</td><td class="num">$22</td><td class="num">303</td></tr>
+          <tr class="win"><td>IGS | PRX Biostimulator | Qualified Instant Lead</td><td>Stories form</td><td class="num">$297</td><td class="num">10</td><td class="num">$30</td><td class="num">43</td></tr>
+          <tr class="win"><td>IGS | Letybo | Qualified Instant Lead</td><td>Stories form</td><td class="num">$302</td><td class="num">10</td><td class="num">$30</td><td class="num">60</td></tr>
+          <tr class="win"><td>Quiz | Bride | Video | countdown</td><td>Feed/Reels video</td><td class="num">$2,208</td><td class="num">41</td><td class="num">$54</td><td class="num">379</td></tr>
+          <tr><td>TM | Microneedling | Image | Offer</td><td>Offer special</td><td class="num">$232</td><td class="num">3</td><td class="num">$77</td><td class="num">133</td></tr>
+          <tr><td>TM | Event Timing | Video | Reel</td><td>Concern reel</td><td class="num">$130</td><td class="num">2</td><td class="num">$65</td><td class="num">23</td></tr>
+          <tr><td>TM | Acne + Post-Acne | Video | Reel</td><td>Concern reel</td><td class="num">$134</td><td class="num">2</td><td class="num">$67</td><td class="num">16</td></tr>
+          <tr><td>TM | Event Timing | Image | Hook</td><td>Concern image</td><td class="num">$32</td><td class="num">1</td><td class="num">$32</td><td class="num">6</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:16px">Instant-form specials beat landing-page specials on the same procedures. Wedding countdown video remains the volume workhorse (75,520 plays, 4,892 ThruPlays) but about 11 of 41 quiz leads are out of area — tighten geo before scaling.</p>
+      <p>Not working as lead ads: Expression Lines Reel (8.4% CTR, 0 leads), Facial Results Reel, Botox Stories ($128, 0 leads), HIFU Face Stories ($134, 0 leads).</p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Takeaway</h2>
+      <p>Scale Microneedling, PRX, and Letybo Instant Forms. Keep the wedding quiz on, with a harder LA geo. Keep Treatment Match offer live as the DM and consult lane — that is where Josefina and lei sales came from. Recycle Event Timing and Acne as Reels. Pause HIFU Face and Botox Stories.</p>
+      <div class="kpis">
+        <div class="kpi good"><b>$58</b><span>Blended cost per lead</span></div>
+        <div class="kpi good"><b>$22</b><span>Microneedling Stories CPL</span></div>
+        <div class="kpi good"><b>3</b><span>Consults booked</span></div>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
