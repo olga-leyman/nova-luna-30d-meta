@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Nova Luna · Lead follow-up audit</title>
+  <title>Nova Luna · Follow-up is 3–5, not 15</title>
   <style>
     :root {
       --ink: #2c2420;
@@ -27,268 +27,81 @@
     .eyebrow { letter-spacing: .16em; text-transform: uppercase; font-size: 11px; color: var(--gold); font-family: ui-sans-serif, system-ui, sans-serif; }
     h1 { font-weight: 500; font-size: 34px; margin: 8px 0 12px; letter-spacing: -.02em; }
     h2 { font-weight: 500; font-size: 22px; margin: 0 0 12px; }
-    h3 { font-weight: 500; font-size: 16px; margin: 22px 0 10px; }
     p { margin: 0 0 12px; }
     .muted { color: var(--muted); font-size: 14px; }
     .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 22px 0 8px; }
     .kpi { background: var(--card); border: 1px solid var(--line); padding: 16px 18px; }
     .kpi b { display: block; font-size: 28px; font-weight: 500; letter-spacing: -.03em; }
     .kpi span { display: block; margin-top: 4px; font-size: 11px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; letter-spacing: .04em; text-transform: uppercase; }
-    .kpi.good b { color: var(--good); }
-    .kpi.warn b { color: var(--warn); }
     .kpi.bad b { color: var(--bad); }
+    .kpi.warn b { color: var(--warn); }
     section { margin: 40px 0; }
     hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
     table { width: 100%; border-collapse: collapse; background: var(--card); font-size: 14px; }
     th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
     th { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
     td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
-    tr.win td:first-child { box-shadow: inset 3px 0 0 var(--good); }
-    tr.soft td:first-child { box-shadow: inset 3px 0 0 var(--warn); }
-    tr.miss td:first-child { box-shadow: inset 3px 0 0 var(--bad); }
-    .callout { background: #f1efe6; border-left: 3px solid var(--gold); padding: 14px 16px; margin: 16px 0 20px; }
-    .callout.bad { border-left-color: var(--bad); }
+    .callout { background: #f1efe6; border-left: 3px solid var(--bad); padding: 14px 16px; margin: 16px 0 20px; }
     .bars { display: grid; gap: 10px; margin: 16px 0 8px; }
-    .bar-row { display: grid; grid-template-columns: 190px 1fr 56px; gap: 10px; align-items: center; font-size: 13px; }
+    .bar-row { display: grid; grid-template-columns: 210px 1fr 56px; gap: 10px; align-items: center; font-size: 13px; }
     .track { height: 10px; background: #ece3d8; }
-    .fill { height: 10px; background: var(--gold); }
-    .fill.alt { background: #6d7f6a; }
-    .fill.bad { background: #a56b64; }
-    .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 28px; }
+    .fill { height: 10px; background: #a56b64; }
+    .fill.gold { background: var(--gold); }
     ol.story { padding-left: 18px; margin: 8px 0 16px; }
     ol.story li { margin: 0 0 10px; }
     @media (max-width: 800px) {
-      .kpis, .grid2 { grid-template-columns: 1fr 1fr; }
+      .kpis { grid-template-columns: 1fr 1fr; }
       .bar-row { grid-template-columns: 1fr; }
     }
-    @media (max-width: 520px) {
-      .kpis { grid-template-columns: 1fr; }
-      h1 { font-size: 26px; }
-    }
+    @media (max-width: 520px) { .kpis { grid-template-columns: 1fr; } h1 { font-size: 26px; } }
   </style>
 </head>
 <body>
   <div class="wrap">
     <header>
-      <div class="eyebrow">Internal · Nova Luna Wellness · Follow-up audit</div>
-      <h1>She was told 15 touches. She is missing them.</h1>
-      <p>131 leads, Aug 16–Sep 22. Counted from her own dated comments. If 15 means 15 calls, or 15 separate days: <strong>nobody hit it</strong>. Even if we are generous and count call + SMS + voicemail on the same day as three touches: <strong>97 of 131 leads (74%) still miss 15</strong>. Median lead: 2 calls, 2 days she came back. Stories Instant Forms — the ones she works hardest — median 4 calls.</p>
-      <p class="muted">Workbook comments only have dates, not times. One “touch day” = one calendar date with a logged call, SMS, voicemail, and/or email.</p>
+      <div class="eyebrow">Internal · Los Angeles leads only · Show the lead person</div>
+      <h1>She follows up 3 to 5 times. That is a poor job.</h1>
+      <p>This is not Texas, Florida, New York, or “can’t come to LA.” This is <strong>93 Los Angeles / SoCal leads</strong>, Aug 16–Sep 22, counted from her own dated comments. Median follow-up: <strong>3 calls and 3 texts</strong>. The LA Instagram Stories leads she works hardest: <strong>4</strong>. Quiz leads: <strong>2</strong>.</p>
+      <p>She was told <strong>15</strong>. Nobody got 15. Three people got 10–11. That is the ceiling. Two-thirds of LA leads never even passed 5.</p>
+      <p class="muted">Out-of-state names were removed (27 people: TX, FL, NY, NJ, GA, OH, NC, SC, TN, WA, ID, Bay Area, and Instant Forms that said LA does not work). One dated call on a calendar day = 1 call. Same-day call + SMS + voicemail is still 1 call that day.</p>
     </header>
 
     <div class="kpis">
-      <div class="kpi bad"><b>0 / 131</b><span>Got 15 calls</span></div>
-      <div class="kpi bad"><b>0 / 131</b><span>Got 15 separate days</span></div>
-      <div class="kpi bad"><b>74%</b><span>Miss 15 even counting SMS+VM as extra</span></div>
-      <div class="kpi"><b>2</b><span>Median calls per lead</span></div>
-      <div class="kpi warn"><b>4</b><span>Stories Instant Forms: median calls</span></div>
-      <div class="kpi bad"><b>9</b><span>Most calls any one lead got</span></div>
+      <div class="kpi bad"><b>3</b><span>Median calls per LA lead</span></div>
+      <div class="kpi bad"><b>4</b><span>Median on LA Stories Instant Forms</span></div>
+      <div class="kpi bad"><b>2</b><span>Median on wedding quiz</span></div>
+      <div class="kpi bad"><b>63 / 93</b><span>Never more than 5 calls · 68%</span></div>
+      <div class="kpi bad"><b>0 / 93</b><span>Got 15 calls</span></div>
+      <div class="kpi bad"><b>11</b><span>Most calls anyone got · still 4 short of 15</span></div>
     </div>
 
-    <div class="callout bad">
-      You told her at least 15. The log does not show 15. Max calls on one person: 9 (Sabine, Jaz, Jeannie, Domenica). Typical Instant Form: 4 calls over 4 days. Typical quiz lead: 2. 48% do not even get a same-calendar-day first touch. Saturdays are empty — that is a missed touch before she starts counting to 15.
+    <div class="callout">
+      The job she actually ran is 3–5 follow-ups. 43 of 93 LA leads got 0–2 calls. 20 got the 3–5 she settles at. 30 got more than 5 — and even those stop at 9, 10, 11. Fifteen never happens.
     </div>
 
     <section>
-      <h2>The 15-touch rule, three ways of counting</h2>
-      <p>Same 131 people. The only way anyone “hits 15” is if a single afternoon of call + text + voicemail counts as 3. That is still a miss for 3 in 4 leads.</p>
-      <table>
-        <thead>
-          <tr><th>How you count “15 times”</th><th class="num">Median</th><th class="num">Max</th><th class="num">Hit 15</th><th class="num">Missed 15</th><th>Verdict</th></tr>
-        </thead>
-        <tbody>
-          <tr class="miss"><td>15 calls</td><td class="num">2</td><td class="num">9</td><td class="num">0</td><td class="num">131 · 100%</td><td>Missed. Nobody got there.</td></tr>
-          <tr class="miss"><td>15 separate days she came back</td><td class="num">2</td><td class="num">11</td><td class="num">0</td><td class="num">131 · 100%</td><td>Missed. Longest chase is 11 days.</td></tr>
-          <tr class="soft"><td>15 channel pings (call+SMS+VM each count)</td><td class="num">6</td><td class="num">29</td><td class="num">34 · 26%</td><td class="num">97 · 74%</td><td>Still missed for most. Instant Forms 42% hit; quiz 4%.</td></tr>
-        </tbody>
-      </table>
-      <h3>Where the list actually sits (channel pings — the generous count)</h3>
+      <h2>How many LA leads got how many calls</h2>
       <div class="bars">
-        <div class="bar-row"><span>0 touches</span><div class="track"><div class="fill bad" style="width:21%"></div></div><span>10</span></div>
-        <div class="bar-row"><span>1–4 (far under 15)</span><div class="track"><div class="fill bad" style="width:79%"></div></div><span>38</span></div>
-        <div class="bar-row"><span>5–9</span><div class="track"><div class="fill" style="width:73%"></div></div><span>35</span></div>
-        <div class="bar-row"><span>10–14 (close, still miss)</span><div class="track"><div class="fill" style="width:29%"></div></div><span>14</span></div>
-        <div class="bar-row"><span>15–19 (clears the bar)</span><div class="track"><div class="fill alt" style="width:33%"></div></div><span>16</span></div>
-        <div class="bar-row"><span>20+ (only via stacking 3 channels)</span><div class="track"><div class="fill alt" style="width:38%"></div></div><span>18</span></div>
-      </div>
-      <table style="margin-top:22px">
-        <thead>
-          <tr><th>Lane</th><th class="num">Leads</th><th class="num">Median calls</th><th class="num">Median days</th><th class="num">Hit 15 pings</th><th class="num">Missed 15</th></tr>
-        </thead>
-        <tbody>
-          <tr class="soft"><td>Stories Instant Forms</td><td class="num">62</td><td class="num">4</td><td class="num">4</td><td class="num">26 · 42%</td><td class="num">36 · 58%</td></tr>
-          <tr class="soft"><td>Treatment Match</td><td class="num">20</td><td class="num">3</td><td class="num">4.5</td><td class="num">6 · 30%</td><td class="num">14 · 70%</td></tr>
-          <tr class="miss"><td>Wedding quiz</td><td class="num">49</td><td class="num">2</td><td class="num">2</td><td class="num">2 · 4%</td><td class="num">47 · 96%</td></tr>
-        </tbody>
-      </table>
-      <p class="muted" style="margin-top:12px">Volume if every lead got 15 calls: 1,965. Logged: 424. That is 22% of the 15-call plan — 1,541 missed calls.</p>
-    </section>
-
-    <hr />
-
-    <section>
-      <h2>1. What a touch actually is</h2>
-      <p>She does not do three separate conversations. She does one session with three channels. 471 touch days were logged. Two-thirds are the same bundle: call, text, voicemail, same date.</p>
-      <div class="bars">
-        <div class="bar-row"><span>Call + SMS + voicemail</span><div class="track"><div class="fill alt" style="width:100%"></div></div><span>311 · 66%</span></div>
-        <div class="bar-row"><span>Call + SMS, no voicemail</span><div class="track"><div class="fill" style="width:20%"></div></div><span>61 · 13%</span></div>
-        <div class="bar-row"><span>SMS only</span><div class="track"><div class="fill" style="width:15%"></div></div><span>46 · 10%</span></div>
-        <div class="bar-row"><span>Call + voicemail</span><div class="track"><div class="fill" style="width:9%"></div></div><span>27 · 6%</span></div>
-        <div class="bar-row"><span>Call only</span><div class="track"><div class="fill" style="width:6%"></div></div><span>20 · 4%</span></div>
-        <div class="bar-row"><span>Call + SMS + VM + email</span><div class="track"><div class="fill bad" style="width:2%"></div></div><span>5 · 1%</span></div>
-      </div>
-      <p class="muted">Read “9 attempts” on an Instant Form as ~4 days of that triple, not 9 live conversations. Email appears on 5 of 471 sessions.</p>
-    </section>
-
-    <section>
-      <h2>2. Once, twice, or a long chase</h2>
-      <p>The median lead got <strong>two touch days</strong> — which is the SOP. The mean is 3.6 because a fat tail of Instant Form and Treatment Match names get hit 5–11 days. Quiz leads mostly stop at two.</p>
-      <div class="kpis">
-        <div class="kpi"><b>10</b><span>Never touched</span></div>
-        <div class="kpi"><b>24</b><span>Once</span></div>
-        <div class="kpi good"><b>33</b><span>Exactly twice</span></div>
-        <div class="kpi warn"><b>22</b><span>3–4 days</span></div>
-        <div class="kpi bad"><b>42</b><span>5–11 days (heavy)</span></div>
-        <div class="kpi"><b>0</b><span>Saturday sessions</span></div>
-      </div>
-      <div class="bars" style="margin-top:20px">
-        <div class="bar-row"><span>Never / once</span><div class="track"><div class="fill" style="width:35%"></div></div><span>34</span></div>
-        <div class="bar-row"><span>Exactly twice (SOP)</span><div class="track"><div class="fill alt" style="width:34%"></div></div><span>33</span></div>
-        <div class="bar-row"><span>3–4 days</span><div class="track"><div class="fill" style="width:23%"></div></div><span>22</span></div>
-        <div class="bar-row"><span>5+ heavy chase</span><div class="track"><div class="fill bad" style="width:43%"></div></div><span>42</span></div>
-      </div>
-      <table style="margin-top:22px">
-        <thead>
-          <tr><th>Lane</th><th class="num">Leads</th><th class="num">Median days</th><th class="num">Median calls</th><th class="num">Twice or more</th><th class="num">Any email</th></tr>
-        </thead>
-        <tbody>
-          <tr class="soft"><td>Stories Instant Forms</td><td class="num">62</td><td class="num">4</td><td class="num">4</td><td class="num">46 / 62</td><td class="num">0</td></tr>
-          <tr class="soft"><td>Treatment Match</td><td class="num">20</td><td class="num">4.5</td><td class="num">3</td><td class="num">14 / 20</td><td class="num">2</td></tr>
-          <tr class="win"><td>Wedding quiz</td><td class="num">49</td><td class="num">2</td><td class="num">2</td><td class="num">37 / 49</td><td class="num">1</td></tr>
-        </tbody>
-      </table>
-      <p class="muted" style="margin-top:12px">Two things are true at once. Versus a 15-call rule, Instant Forms are under — median 4, not 15. Versus “stop after two silent triples,” a third of the list is over-chased with no inbox. Weekends are dark. A Friday lead sits until Monday. Sep 10 she swept 48 leads in one day — that is a list blast, not 15 thoughtful touches.</p>
-    </section>
-
-    <hr />
-
-    <section>
-      <h2>3. Calls on the page vs 15</h2>
-      <p>Each dated “call” is one call. <code>9/3 - call, sms, voice</code> is 1 call that day, not 3. Stories Instant Forms median 4. The most anyone got is 9. That is the “she misses the touch.”</p>
-      <div class="kpis">
-        <div class="kpi bad"><b>424</b><span>Calls logged</span></div>
-        <div class="kpi"><b>1,965</b><span>If every lead got 15</span></div>
-        <div class="kpi bad"><b>22%</b><span>Of the 15-call plan</span></div>
-      </div>
-      <div class="bars">
-        <div class="bar-row"><span>0 calls</span><div class="track"><div class="fill" style="width:25%"></div></div><span>12</span></div>
-        <div class="bar-row"><span>1–2 calls</span><div class="track"><div class="fill" style="width:100%"></div></div><span>59</span></div>
-        <div class="bar-row"><span>3–5 calls</span><div class="track"><div class="fill alt" style="width:49%"></div></div><span>29</span></div>
-        <div class="bar-row"><span>6–9 calls (the max)</span><div class="track"><div class="fill bad" style="width:53%"></div></div><span>31</span></div>
+        <div class="bar-row"><span>0–2 calls (stopped early)</span><div class="track"><div class="fill" style="width:46%"></div></div><span>43</span></div>
+        <div class="bar-row"><span>3–5 calls (her actual job)</span><div class="track"><div class="fill gold" style="width:22%"></div></div><span>20</span></div>
+        <div class="bar-row"><span>6–9 calls</span><div class="track"><div class="fill" style="width:29%"></div></div><span>27</span></div>
+        <div class="bar-row"><span>10–11 calls (best on the list)</span><div class="track"><div class="fill" style="width:3%"></div></div><span>3</span></div>
         <div class="bar-row"><span>15 calls</span><div class="track"><div class="fill" style="width:0%"></div></div><span>0</span></div>
       </div>
-      <p class="muted">You told her 15. The script sheet in the same file says 5 minutes / 15 minutes / same day, plus 2–3 texts. Neither 15 calls nor same-day speed is being run as written.</p>
-    </section>
-
-    <hr />
-
-    <section>
-      <h2>4. Incoming messages — the list is not talking back</h2>
-      <p>This workbook is an outbound log. Incoming is only what she wrote down. 17 of 131 leads (13%) have any inbound SMS note. Several of those are DND / STOP, not a conversation. Two people called the clinic back.</p>
-      <h3>Two-way replies</h3>
-      <table>
-        <thead>
-          <tr><th>Lead</th><th>Lane</th><th>What came in</th></tr>
-        </thead>
-        <tbody>
-          <tr class="win"><td>Phoenix T</td><td>Stories · PRX</td><td>She gave a call back (Sep 3)</td></tr>
-          <tr class="win"><td>Lucine Asatorian</td><td>Wedding quiz</td><td>Texted back: call after 5pm (Sep 2)</td></tr>
-          <tr class="win"><td>Jeannie MacKechnie</td><td>TM · PRX</td><td>SMS: interested in an appointment this week</td></tr>
-          <tr class="win"><td>Amanda Correia</td><td>Stories · Microneedling</td><td>Asked about appointment time</td></tr>
-          <tr class="win"><td>Meli / Isaveila</td><td>Stories · Microneedling</td><td>Asked about location</td></tr>
-          <tr class="win"><td>Shaid Nunez</td><td>Stories · VI Peel</td><td>Asked for a call Wed 9/23 at 5pm</td></tr>
-          <tr class="soft"><td>Alexandra Jones</td><td>Wedding quiz</td><td>Replied: not interested</td></tr>
-          <tr class="soft"><td>Yeni Solorzano</td><td>Stories</td><td>SMS: no longer interested (Sep 14)</td></tr>
-          <tr class="soft"><td>Bellas Cortez</td><td>Stories</td><td>Asked to pause; will reach back</td></tr>
-          <tr class="soft"><td>isis casillas</td><td>Stories</td><td>Would like to close request (Sep 18)</td></tr>
-        </tbody>
-      </table>
-      <p class="muted" style="margin-top:12px">DND / STOP also came in from Ana Trujillo, Sylvia Hernandez, Angelica Au, Sarah StJohn, Wendy Barcenas, Kelly Brett. That is an incoming message — it is not a booking conversation. Meta ad DMs (16 new conversations) live in Instagram, not this sheet.</p>
-    </section>
-
-    <hr />
-
-    <section>
-      <h2>5. When twice works</h2>
-      <p>When she does it twice and the lead is live, the file shows movement. That is a closed loop. The problem is not “she never does two touches.” It is that Instant Forms keep going after the second touch with nothing coming back.</p>
-      <table>
-        <thead>
-          <tr><th>Lead</th><th>Touch days</th><th>What happened</th><th>Read</th></tr>
-        </thead>
-        <tbody>
-          <tr class="win"><td>lei sales</td><td class="num">2</td><td>Triple, then SMS → APPT Oct 2</td><td>SOP working</td></tr>
-          <tr class="win"><td>Brishna hashimi</td><td class="num">1</td><td>One triple Sep 16 → APPT Sep 22</td><td>One good connect beat 20 calls</td></tr>
-          <tr class="win"><td>Daniela Contreras</td><td class="num">3</td><td>Short burst Sep 10–16 → APPT Sep 22 1pm</td><td>Recent, live, booked</td></tr>
-          <tr class="win"><td>Shaid Nunez</td><td class="num">1</td><td>One triple → asked for Wed 5pm call</td><td>Stop blasting, keep the appointment</td></tr>
-          <tr class="win"><td>Monse Miranda</td><td class="num">1</td><td>Connected: too far, not interested</td><td>Correctly stopped</td></tr>
-          <tr class="win"><td>Darina Murr</td><td class="num">2</td><td>Not interested on call 2</td><td>Correctly stopped</td></tr>
-          <tr class="win"><td>Lucine Asatorian</td><td class="num">2</td><td>She texted back: call after 5pm</td><td>Inbox used</td></tr>
-        </tbody>
-      </table>
+      <p class="muted">365 calls logged on 93 LA leads. If each lead got 15: 1,395. She delivered <strong>26%</strong> of that. If the bar is 20: 19%.</p>
     </section>
 
     <section>
-      <h2>6. When multiple becomes a list sweep</h2>
-      <p>These are not “we didn’t try.” These are 20–26 channel attempts across two to three weeks, still no inbound SMS. After touch two with no reply, more triples are not a conversation.</p>
-      <table>
-        <thead>
-          <tr><th>Lead</th><th class="num">Days</th><th class="num">Call+SMS days</th><th>Incoming?</th></tr>
-        </thead>
-        <tbody>
-          <tr class="miss"><td>Jeannie MacKechnie</td><td class="num">11</td><td class="num">8</td><td>One early SMS, then family emergency. Still dialing Sep 21.</td></tr>
-          <tr class="miss"><td>Domenica Angiuli</td><td class="num">11</td><td class="num">9</td><td>None logged</td></tr>
-          <tr class="miss"><td>Kimberly Ramirez</td><td class="num">10</td><td class="num">7</td><td>Email on day 1 only. No reply. Still in the blast.</td></tr>
-          <tr class="miss"><td>Elsie Benitez</td><td class="num">10</td><td class="num">7</td><td>Hung up twice. No SMS back.</td></tr>
-          <tr class="miss"><td>Sabine Rogers</td><td class="num">10</td><td class="num">9</td><td>Hung up twice. Then more triples. 9 calls — still 11 short of 20, and no inbox.</td></tr>
-          <tr class="soft"><td>Phoenix T</td><td class="num">9</td><td class="num">6</td><td>She called back Sep 3 — then five more touch days through Sep 18.</td></tr>
-        </tbody>
-      </table>
-      <p class="muted" style="margin-top:12px">Phoenix is the tell: a real incoming call, then the batch cadence kept going instead of treating her as an active conversation.</p>
-    </section>
-
-    <hr />
-
-    <section>
-      <h2>7. What actually converted</h2>
-      <p>Bookings in this file sit on 1–4 touch days with a live connect — not on the 9-call tail.</p>
-      <table>
-        <thead>
-          <tr><th>Lead</th><th class="num">Touch days</th><th>How they converted</th></tr>
-        </thead>
-        <tbody>
-          <tr class="win"><td>Brishna hashimi</td><td class="num">1</td><td>One triple → APPT Sep 22</td></tr>
-          <tr class="win"><td>lei sales</td><td class="num">2</td><td>Triple then SMS → APPT Oct 2</td></tr>
-          <tr class="win"><td>Daniela Contreras</td><td class="num">3</td><td>Four calls in a short burst → APPT Sep 22 1pm</td></tr>
-          <tr class="soft"><td>Letisha Paez Holloway</td><td class="num">4+</td><td>Connected Sep 7, booked Sep 18, no-show</td></tr>
-          <tr class="win"><td>Josefina Maranan</td><td class="num">5</td><td>Call became a Zoom consult Sep 4; still thinking about an in-person appt Sep 21</td></tr>
-        </tbody>
-      </table>
-    </section>
-
-    <section>
-      <h2>What to tell the room</h2>
+      <h2>What to say to her</h2>
       <ol class="story">
-        <li><strong>She is missing the 15-touch rule.</strong> 0 of 131 leads got 15 calls. Median is 2. Instant Forms median is 4. Even counting SMS and voicemail as extra pings, 74% still miss 15.</li>
-        <li><strong>She also misses the first touch.</strong> 48% same-calendar-day. Zero Saturdays. Friday leads wait until Monday. Sep 10 was 48 people in one blast — that is not 15 touches, that is one sweep.</li>
-        <li><strong>33 leads got a clean twice.</strong> 42 got a 5–11 day chase with an empty inbox. After two silent triples, stop or change the message — do not add a ninth voicemail and call it 15.</li>
-        <li><strong>The inbox is the queue.</strong> Phoenix called back and still got five more blast days. Lucine, Amanda, Shaid, Jeannie already wrote — those names should jump the list.</li>
-        <li><strong>Bookings came from 1–4 live days, not from 15 attempts.</strong> Brishna booked on one triple. lei sales booked on two. The long silent chase did not produce the clients.</li>
+        <li><strong>This is LA only.</strong> We already pulled the people who live in other states. You cannot say those leads were not local. These 93 can come to the studio.</li>
+        <li><strong>3–5 is not persistence.</strong> That is the first week, then the list goes quiet. Stories Instant Forms — median 4. Quiz — median 2. That is the pattern, not a few misses.</li>
+        <li><strong>15 was the assignment. 0 of 93 hit it.</strong> Best case is Jeannie at 11. Still four calls short. Elsie and Kimberly got 10. Empty ticks after that are the job she did not do.</li>
+        <li><strong>Stopping at 3–5 is why chairs stay empty.</strong> The people who did book needed the extra days. Cutting the list after a handful of silent triples is the poor job.</li>
       </ol>
-      <div class="callout">
-        Next hour of her time is worth more on same-day first connect, and on the people who already wrote back, than on the ninth voicemail to Domenica or Kimberly.
-      </div>
-      <p class="muted">Workbook: Nova Luna Wedding Quiz Consultation Records (1).xlsx · AS comments on Instant Forms, Treatment Match, Live Updates · Aug 16–Sep 22, 2026.</p>
     </section>
+
+    <p class="muted">Full roster with a tick for every missed call: <a href="touches.html">every LA lead vs 15</a>.</p>
   </div>
 </body>
 </html>
