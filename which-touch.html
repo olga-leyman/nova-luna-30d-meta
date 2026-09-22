@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nova Luna · Which touch books</title>
+  <style>
+    :root {
+      --ink: #2c2420;
+      --muted: #6f635c;
+      --line: #e4d8cc;
+      --paper: #f7f1ea;
+      --card: #fffdf9;
+      --gold: #b0894d;
+      --good: #3d6b4f;
+      --warn: #9a6b2f;
+      --bad: #8a3b32;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 16px/1.55 "Iowan Old Style", Palatino, "Palatino Linotype", Georgia, serif;
+    }
+    .wrap { max-width: 1080px; margin: 0 auto; padding: 40px 24px 80px; }
+    .eyebrow { letter-spacing: .16em; text-transform: uppercase; font-size: 11px; color: var(--gold); font-family: ui-sans-serif, system-ui, sans-serif; }
+    h1 { font-weight: 500; font-size: 32px; margin: 8px 0 12px; letter-spacing: -.02em; }
+    h2 { font-weight: 500; font-size: 22px; margin: 0 0 12px; }
+    p { margin: 0 0 12px; }
+    .muted { color: var(--muted); font-size: 14px; }
+    .kpis { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin: 22px 0 8px; }
+    .kpi { background: var(--card); border: 1px solid var(--line); padding: 16px 18px; }
+    .kpi b { display: block; font-size: 28px; font-weight: 500; letter-spacing: -.03em; }
+    .kpi span { display: block; margin-top: 4px; font-size: 11px; color: var(--muted); font-family: ui-sans-serif, system-ui, sans-serif; letter-spacing: .04em; text-transform: uppercase; }
+    .kpi.good b { color: var(--good); }
+    .kpi.warn b { color: var(--warn); }
+    section { margin: 40px 0; }
+    hr { border: 0; border-top: 1px solid var(--line); margin: 36px 0; }
+    table { width: 100%; border-collapse: collapse; background: var(--card); font-size: 14px; }
+    th, td { text-align: left; padding: 10px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+    th { font-family: ui-sans-serif, system-ui, sans-serif; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+    td.num, th.num { text-align: right; font-variant-numeric: tabular-nums; }
+    tr.win td:first-child { box-shadow: inset 3px 0 0 var(--good); }
+    tr.soft td:first-child { box-shadow: inset 3px 0 0 var(--warn); }
+    .callout { background: #f1efe6; border-left: 3px solid var(--gold); padding: 14px 16px; margin: 16px 0 20px; }
+    .bars { display: grid; gap: 10px; margin: 16px 0 8px; }
+    .bar-row { display: grid; grid-template-columns: 70px 1fr 40px; gap: 10px; align-items: center; font-size: 13px; }
+    .track { height: 10px; background: #ece3d8; }
+    .fill { height: 10px; background: #6d7f6a; }
+    @media (max-width: 800px) { .kpis { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 520px) { .kpis { grid-template-columns: 1fr; } h1 { font-size: 26px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="eyebrow">Internal · Nova Luna Wellness · Follow-up</div>
+    <h1>Bookings land on the 3rd, 4th, even 6th touch</h1>
+    <p>For people who needed a chase, the appointment was not written on call one. Daniela booked on touch 3. Josefina’s Zoom locked on touch 4. Letisha booked on touch 6. Stopping at two silent days would have dropped those names. The 9th–11th voicemail did not book anyone extra.</p>
+    <p class="muted">A touch = one calendar day with a logged call, SMS, or voicemail — not three channels counted as three. Source: consultation workbook, dated AS comments, Aug 16–Sep 22, 2026.</p>
+
+    <div class="kpis">
+      <div class="kpi good"><b>3rd</b><span>Daniela · APPT Sep 22</span></div>
+      <div class="kpi good"><b>4th</b><span>Josefina · Zoom Sep 4</span></div>
+      <div class="kpi"><b>6th</b><span>Letisha · consult, then no-show</span></div>
+      <div class="kpi"><b>1st</b><span>Brishna · same-day APPT</span></div>
+      <div class="kpi"><b>2nd</b><span>lei sales / Nazelle</span></div>
+      <div class="kpi warn"><b>7th+</b><span>Madison Little · quiz sequence</span></div>
+    </div>
+
+    <div class="callout">
+      The money window is touches <strong>3–6</strong>. First-touch books happen. Chase books happen later. After six days of don’t-answer with no inbound, more triples did not add a client.
+    </div>
+
+    <section>
+      <h2>How many bookings per touch number</h2>
+      <div class="bars">
+        <div class="bar-row"><span>1st</span><div class="track"><div class="fill" style="width:100%"></div></div><span>2</span></div>
+        <div class="bar-row"><span>2nd</span><div class="track"><div class="fill" style="width:100%"></div></div><span>2</span></div>
+        <div class="bar-row"><span>3rd</span><div class="track"><div class="fill" style="width:50%"></div></div><span>1</span></div>
+        <div class="bar-row"><span>4th</span><div class="track"><div class="fill" style="width:50%"></div></div><span>1</span></div>
+        <div class="bar-row"><span>5th</span><div class="track"><div class="fill" style="width:0%"></div></div><span>0</span></div>
+        <div class="bar-row"><span>6th</span><div class="track"><div class="fill" style="width:50%"></div></div><span>1</span></div>
+        <div class="bar-row"><span>7th+</span><div class="track"><div class="fill" style="width:50%"></div></div><span>1</span></div>
+      </div>
+      <p class="muted">Eight dated bookings in the log. Half are on touch 3 or later. None of the 8th–11th silent triples created a new appointment.</p>
+    </section>
+
+    <hr />
+
+    <section>
+      <h2>Confirmed times — which touch wrote the appointment</h2>
+      <table>
+        <thead>
+          <tr><th>Lead</th><th>Source</th><th class="num">Touch #</th><th>Days before it booked</th><th>What got booked</th></tr>
+        </thead>
+        <tbody>
+          <tr class="win"><td>Daniela Contreras</td><td>Stories · Microneedling</td><td class="num">3</td><td>9/10, 9/14, then 9/16 call</td><td>APPT Sep 22, 1pm</td></tr>
+          <tr class="win"><td>Josefina Maranan</td><td>Treatment Match · Sculptra</td><td class="num">4</td><td>8/24, 8/31, 9/2 mailbox full, 9/3 call</td><td>Zoom consult Sep 4, 1pm</td></tr>
+          <tr class="soft"><td>Letisha Paez Holloway</td><td>Stories · Microneedling</td><td class="num">6</td><td>Five don’t-answer days, 9/7 connected</td><td>Consult Sep 18, 4:30pm — no-show</td></tr>
+          <tr class="win"><td>lei sales</td><td>Treatment Match · Microneedling</td><td class="num">2–3</td><td>8/24 triple, 8/25 SMS, APPT noted 8/28–8/31</td><td>In-person Oct 2, 1pm</td></tr>
+          <tr class="win"><td>Nazelle Calantas</td><td>Wedding quiz</td><td class="num">2</td><td>8/18 call+SMS, 8/19 call booked</td><td>Rebooked Sep 19, 4:45pm</td></tr>
+          <tr class="soft"><td>Madison Little</td><td>Wedding quiz</td><td class="num">7+</td><td>July–Aug sequence; note says “day 14”</td><td>Appt Aug 28, 2pm</td></tr>
+          <tr class="win"><td>Brishna hashimi</td><td>Stories · Microneedling</td><td class="num">1</td><td>One triple on 9/16</td><td>APPT Sep 22</td></tr>
+          <tr class="soft"><td>Sediqi</td><td>Wedding quiz</td><td class="num">1</td><td>Same-day 8/19 call+SMS+VM</td><td>Aug 25 11am — no-show</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>Intent that showed up late — not yet a booking</h2>
+      <table>
+        <thead>
+          <tr><th>Lead</th><th>Touch when it happened</th><th>Note</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Amanda Correia</td><td>6th SMS</td><td>Asked about appointment time after five silent triples</td></tr>
+          <tr><td>Jeannie MacKechnie</td><td>2nd (SMS)</td><td>Wanted an appt that week — family emergency. Still being dialed on day 11.</td></tr>
+          <tr><td>Xitlali Cabrera</td><td>1st</td><td>Interested for November, not a booked slot</td></tr>
+          <tr><td>Shaid Nunez</td><td>1st</td><td>Asked for a call Wed 9/23 at 5pm — keep, don’t blast</td></tr>
+        </tbody>
+      </table>
+      <p class="muted" style="margin-top:12px">Amanda is the quiet proof: she did not ask for a time until touch six. Cut her at two and that question never happens. Keep hitting Domenica and Kimberly at ten with no inbound and you still have no Amanda moment.</p>
+    </section>
+
+    <div class="callout">
+      15–20 silent triples is not what booked these chairs. Persistence through touches 3–6, on people who have not opted out, is. After that: if they connect, book. If they never pick up and never text back, the 9th voicemail is not another Daniela — it is a list sweep.
+    </div>
+    <p class="muted">Also: <a href="touches.html">calls and SMS vs 20</a> · <a href="outreach.html">full follow-up audit</a></p>
+  </div>
+</body>
+</html>
